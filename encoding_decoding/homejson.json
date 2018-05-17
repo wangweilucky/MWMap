@@ -1,0 +1,51 @@
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "detail": {
+            "total_count": 1,
+            "total_pages": 1,
+            "list": [
+                     {
+                     "quantity": 2,
+                     "unit": "HUAT",
+                     "unitName": "花溪钻",
+                     "appName": "花溪小说",
+                     "externalUserId": "aabbccdd",
+                     "externalUserName": "aabbccdd",
+                     "appKey": "fb61da1dc41f4e1f8d978a9e7547edda",
+                     "uatRemoteUrl": "http://aabbcc/uat/",
+                     "appUrl": "http://huaxi",
+                     "isRequestActivated": 1,
+                     "appIcon": "http://aa.png"
+                     },
+                     {
+                     "quantity": 2,
+                     "unit": "HUAT",
+                     "unitName": "花溪钻11",
+                     "appName": "花溪小说11",
+                     "externalUserId": "aabbccdd",
+                     "externalUserName": "aabbccdd",
+                     "appKey": "fb61da1dc41f4e1f8d978a9e7547edda",
+                     "uatRemoteUrl": "http://aabbcc/uat/",
+                     "appUrl": "http://huaxi",
+                     "isRequestActivated": 0,
+                     "appIcon": "http://aa.png"
+                     },
+                     {
+                     "quantity": 2,
+                     "unit": "HUAT",
+                     "unitName": "花溪钻22",
+                     "appName": "花溪小说22",
+                     "externalUserId": "aabbccdd",
+                     "externalUserName": "aabbccdd",
+                     "appKey": "fb61da1dc41f4e1f8d978a9e7547edda",
+                     "uatRemoteUrl": "http://aabbcc/uat/",
+                     "appUrl": "http://huaxi",
+                     "isRequestActivated": 0,
+                     "appIcon": "http://aa.png"
+                     }
+                     ]
+        }
+    }
+}

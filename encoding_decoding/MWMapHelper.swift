@@ -56,4 +56,13 @@ public class MWMapDecoder<T : Decodable> {
             else { return nil }
         return model
     }
+    
+    /// convert jsonString to  model or optional
+    public func decoder(value: Data) -> MWMAPTYPE? {
+        
+        /// convert error to optional
+        guard let model = try? MWDecoder().decode(value) as MWMAPTYPE
+            else { return nil }
+        return model
+    }
 }

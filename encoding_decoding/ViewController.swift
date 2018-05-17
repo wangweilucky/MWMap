@@ -14,12 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // model -> jsonString/Dictionary -> model
-        demo1()
-        
-        
+//        demo1()
+//        demo2()
+        demo3()
     }
-
-
+    
 }
 
 extension ViewController {
@@ -48,12 +47,39 @@ extension ViewController {
     
     func demo2() {
         guard let path = Bundle.main.path(forResource: "homejson", ofType: "json")
-            , let jsonString = try? String(contentsOfFile: path)
-            , let jsonData = jsonString.data(using: .utf8)
-            , let jsonDic = try? JSONSerialization.jsonObject(with: jsonData, options: [])
-            , let jsonDictionay = jsonDic as? [String : Any] else { return }
-        
-        let homeModel = MWMapDecoder<MWUATResult>().decoderDictionary(value: jsonDictionay)
+            , let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
+            , let jsonData = jsonString.data(using: .utf8, allowLossyConversion: false) // jsonString contant "\" "\n"
+            , let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
+            , let homeModel = MWMapDecoder<MWUATResult>().decoderDictionary(value: json as! [String :Any])
+            
+            else { return }
         print(homeModel)
+    }
+    
+    
+    func demo3() {
+        let json = """
+{
+"code" : 1,
+"message" :"",
+"data" : {
+"manufacturer": "Cessna",
+"model": "172 Skyhawk",
+"seats": 4,
+}
+}
+""".data(using: .utf8)
+        
+        let decoder = JSONDecoder()
+        let plane = try! decoder.decode(PlaneResult.self, from: json!)
+        print(plane)
+        
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted// 在print的时候会自动加上换行符号，显示上比较优雅
+        let jsonData = try? encoder.encode(plane)
+        let jsonString = String(data: jsonData!, encoding: .utf8)
+        print(jsonString!)
+        
+        
     }
 }

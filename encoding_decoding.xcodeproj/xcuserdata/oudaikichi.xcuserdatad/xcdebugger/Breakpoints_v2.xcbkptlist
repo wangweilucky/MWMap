@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "encoding_decoding/MWMapHelper.swift"
-            timestampString = "548236537.666477"
+            timestampString = "548238147.796108"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -36,28 +36,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "encoding_decoding/MWMapHelper.swift"
-            timestampString = "548236537.6666059"
+            timestampString = "548238147.796223"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
             landmarkName = "decoderString(value:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "encoding_decoding/ViewController.swift"
-            timestampString = "548236537.66671"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "demo2()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -100,7 +84,7 @@
                   moduleName = "encoding_decoding"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oudaikichi/MWMap/encoding_decoding/MWMap.swift"
-                  timestampString = "548236538.001803"
+                  timestampString = "548238148.029067"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
@@ -115,7 +99,7 @@
                   moduleName = "encoding_decoding"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oudaikichi/MWMap/encoding_decoding/MWMap.swift"
-                  timestampString = "548236538.005558"
+                  timestampString = "548238148.032137"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
@@ -132,12 +116,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "encoding_decoding/ViewController.swift"
-            timestampString = "548236537.6669019"
+            timestampString = "548238147.79642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "demo2()"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "demo3()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -148,12 +132,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "encoding_decoding/ViewController.swift"
-            timestampString = "548236537.666986"
+            timestampString = "548238147.79691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "demo2()"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "demo3()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

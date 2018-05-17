@@ -62,16 +62,23 @@ extension ViewController {
 {
 "code" : 1,
 "message" :"",
-"data" : {
-"manufacturer": "Cessna",
-"model": "172 Skyhawk",
-"seats": 4,
-}
+"planes" : [
+    {
+    "manufacturer": "Cessna",
+    "model": "172 Skyhawk",
+    "seats": 4
+    },
+    {
+    "manufacturer": "Piper",
+    "model": "PA-28 Cherokee",
+    "seats": 4
+    }]
 }
 """.data(using: .utf8)
         
         let decoder = JSONDecoder()
         let plane = try! decoder.decode(PlaneResult.self, from: json!)
+//        let plane = try! decoder.decode([String: [Plane]].self, from: json!) // 需要将json中的code和message字段干掉
         print(plane)
         
         let encoder = JSONEncoder()

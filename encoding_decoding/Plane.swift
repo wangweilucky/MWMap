@@ -10,7 +10,7 @@ import Foundation
 
 
 struct PlaneResult: Decodable, Encodable {
-    var data: Plane
+    var planes: [Plane]
     var message: String
     var code: Int
     

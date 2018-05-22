@@ -2,14 +2,14 @@
     "code": 0,
     "message": "success",
     "data": {
-        "detail": {
+
             "total_count": 1,
             "total_pages": 1,
             "list": [
                      {
                      "quantity": 2,
                      "unit": "HUAT",
-                     "unitName": "花溪钻",
+                     "unitName": null,
                      "appName": "花溪小说",
                      "externalUserId": "aabbccdd",
                      "externalUserName": "aabbccdd",
@@ -46,6 +46,6 @@
                      "appIcon": "http://aa.png"
                      }
                      ]
-        }
+        
     }
 }

@@ -83,8 +83,8 @@
                   symbolName = "encoding_decoding.MWDecoder.decode&lt;A where A: Swift.Decodable&gt;(Foundation.Data) throws -&gt; A"
                   moduleName = "encoding_decoding"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/oudaikichi/MWMap/encoding_decoding/MWMap.swift"
-                  timestampString = "548238148.029067"
+                  urlString = "file:///Users/oudaikichi/Desktop/MWMap/encoding_decoding/MWMap.swift"
+                  timestampString = "548599613.709121"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
@@ -98,8 +98,8 @@
                   symbolName = "encoding_decoding.MWDecoder.decode&lt;A where A: Swift.Decodable&gt;(Foundation.Data) throws -&gt; A"
                   moduleName = "encoding_decoding"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/oudaikichi/MWMap/encoding_decoding/MWMap.swift"
-                  timestampString = "548238148.032137"
+                  urlString = "file:///Users/oudaikichi/Desktop/MWMap/encoding_decoding/MWMap.swift"
+                  timestampString = "548599613.713028"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
@@ -115,30 +115,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "encoding_decoding/ViewController.swift"
-            timestampString = "548238147.79642"
+            filePath = "encoding_decoding/Model2.swift"
+            timestampString = "548599613.470902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "demo3()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "encoding_decoding/ViewController.swift"
-            timestampString = "548238147.79691"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "demo3()"
-            landmarkType = "7">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

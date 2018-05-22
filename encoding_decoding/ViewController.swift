@@ -16,7 +16,8 @@ class ViewController: UIViewController {
         // model -> jsonString/Dictionary -> model
 //        demo1()
 //        demo2()
-        demo3()
+//        demo3()
+//        demo4()
     }
     
 }
@@ -47,13 +48,19 @@ extension ViewController {
     
     func demo2() {
         guard let path = Bundle.main.path(forResource: "homejson", ofType: "json")
-            , let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            , let jsonData = jsonString.data(using: .utf8, allowLossyConversion: false) // jsonString contant "\" "\n"
-            , let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
-            , let homeModel = MWMapDecoder<MWUATResult>().decoderDictionary(value: json as! [String :Any])
+            , let jsonData = NSData(contentsOfFile: path) as Data?
+//            , let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
+//            , let json1 = try? JSONSerialization.data(withJSONObject: jsonString, options: [.prettyPrinted])
+//            , let jsonData = jsonString.data(using: .utf8, allowLossyConversion: false) // jsonString contant "\" "\n"
+//            , let json = try? JSONSerialization.jsonObject(with: jsonData, options: [.allowFragments])
+//            , let homeModel = MWMapDecoder<MWUATResult>().decoderDictionary(value: json as! [String :Any])
             
             else { return }
-        print(homeModel)
+        
+        
+        let decoder = JSONDecoder()
+        let model = try! decoder.decode(MWResult.self, from: jsonData)
+        print(model)
     }
     
     
@@ -87,6 +94,31 @@ extension ViewController {
         let jsonString = String(data: jsonData!, encoding: .utf8)
         print(jsonString!)
         
+        
+    }
+    
+    func demo4() {
+        let jsonData =
+        """
+{
+            "aircraft": {
+                "identification": "NA12345",
+                "color": "Blue/White"
+            },
+            "flight_rules": "IFR",
+            "route": ["KTTD", "KHIO"],
+            "departure_time": {
+                "proposed": 1526902510,
+                "actual": 1526912510
+            },
+            "remarks": null
+        }
+""".data(using: .utf8)
+
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .millisecondsSince1970
+        let model = try! decoder.decode(FlightPlan.self, from: jsonData!)
+        print(model.departureTime.actual)
         
     }
 }

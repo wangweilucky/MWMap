@@ -18,6 +18,7 @@
 		0044E95420A18A7F005738FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0044E95320A18A7F005738FA /* Assets.xcassets */; };
 		0044E95720A18A7F005738FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044E95520A18A7F005738FA /* LaunchScreen.storyboard */; };
 		0044E95F20A18AE1005738FA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044E95E20A18AE1005738FA /* Model.swift */; };
+		00D1741120B2CAED00207EAE /* Model2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1741020B2CAED00207EAE /* Model2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0044E95620A18A7F005738FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0044E95820A18A7F005738FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0044E95E20A18AE1005738FA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		00D1741020B2CAED00207EAE /* Model2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		0044E94B20A18A7C005738FA /* encoding_decoding */ = {
 			isa = PBXGroup;
 			children = (
+				00D1741020B2CAED00207EAE /* Model2.swift */,
 				0044E95E20A18AE1005738FA /* Model.swift */,
 				0007811B20A7257800587AE9 /* HomeModel.swift */,
 				0044E94C20A18A7C005738FA /* AppDelegate.swift */,
@@ -156,6 +159,7 @@
 			files = (
 				0007811620A71EEA00587AE9 /* MWMap.swift in Sources */,
 				0007811820A71F0D00587AE9 /* MWMapHelper.swift in Sources */,
+				00D1741120B2CAED00207EAE /* Model2.swift in Sources */,
 				0007811C20A7257800587AE9 /* HomeModel.swift in Sources */,
 				0044E95F20A18AE1005738FA /* Model.swift in Sources */,
 				0044E94F20A18A7C005738FA /* ViewController.swift in Sources */,
